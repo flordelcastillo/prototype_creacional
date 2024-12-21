@@ -1,0 +1,33 @@
+@startuml
+interface Figura {
++ void setNombre(String)
++ String getNombre()
++ void mover(int,int)
++ String getPosicion()
++ Figura clonar()
+}
+
+
+class Cuadrado {
+- String nombre
+- int posicionX
++ void setNombre(String)
++ String getNombre()
++ void mover(int,int)
++ String getPosicion()
++ Figura clonar()
+}
+
+class Circulo {
+- String nombre
+- int posicionX
++ void setNombre(String)
++ String getNombre()
++ void mover(int,int)
++ String getPosicion()
++ Figura clonar()
+}
+
+Figura <|.. Cuadrado
+Figura <|.. Circulo
+@enduml
